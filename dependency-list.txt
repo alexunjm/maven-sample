@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.sample:example >-------------------------
+[INFO] Building example 1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ example ---
+[INFO] com.sample:example:jar:1.0
+[INFO] \- org.apache.commons:commons-lang3:jar:3.7:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.750 s
+[INFO] Finished at: 2018-07-24T02:15:31-05:00
+[INFO] ------------------------------------------------------------------------

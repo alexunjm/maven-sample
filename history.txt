@@ -1,0 +1,80 @@
+  146  echo $JAVA_HOME
+  147  sudo nano /etc/environment 
+  148  export PATH=$PATH:/opt/custom/apache-maven-3.5.4/bin
+  149  echo $PATH
+  150  mvn -version
+  151  cd desarrollo/java/
+  152  pwd
+  153  git clone https://github.com/alexunjm/maven-sample.git
+  154  ls -al
+  155  code ~/desarrollo/java/maven-sample/
+  156  mvn -version
+  157  mvn compile
+  158  git status
+  159  git add --all
+  160  git status
+  161  git commit -m "Documentando el README"
+  162  git log
+  163  mkdir -p src/main/java
+  164  mkdir -p src/main/resources
+  165  mkdir -p src/test/java
+  166  mkdir -p src/test/resources
+  167  touch src/main/java/.gitkeep
+  168  touch src/main/resources/.gitkeep
+  169  touch src/test/java/.gitkeep
+  170  touch src/test/resources/.gitkeep
+  171  git status
+  172  git add .
+  173  git status
+  174  git commit -m "agregando estructura de carpetas del proyecto java"
+  175  git status
+  176  cd src/main/java
+  177  mkdir -p com/sample/training
+  178  cd ../../..
+  179  mvn package
+  180  git status
+  181  git add .
+  182  git status
+  183  git commit -m "generando paquete java con maven"
+  184  java -cp example-1.0.jar com.example.training.Application
+  185  cd target
+  186  java -cp example-1.0.jar com.example.training.Application
+  187  java -cp example-1.0.jar com.sample.training.Application
+  188  git status
+  189  git add .
+  190  git status
+  191  git add .
+  192  cd ..
+  193  git add .
+  194  git status
+  195  git commit -m "ejecutando paquete java generado"
+  196  mvn clean
+  197  mvn package
+  198  mvn clean package
+  199  mvn clean install
+  200  ls -la ~/.m2/
+  201  ls -la ~/.m2/repository/com/sample/example/1.0/
+  202  git add .
+  203  git status
+  204  git commit -m "instalando el paquete en el repositorio local"
+  205  git remote -v
+  206  git push origin master
+  207  mvn clean install
+  208  cd target
+  209  java -cp example-1.0.jar com.sample.training.Application
+  210  git status
+  211  git add .
+  212  git status
+  213  cd ..
+  214  git status
+  215  git add .
+  216  git status
+  217  git push origin master
+  218  git commit -m "instalando el paquete en el repositorio local con la versión java 1.8"
+  219  git push origin master
+  220  mvn clean compile
+  221  git commit -am "utilizando una dependencia (resuelta con maven)"
+  222  git push origin master
+  223  mvn dependency:tree
+  224  mvn dependency:tree > dependency-list.txt
+  225  history > history.txt
