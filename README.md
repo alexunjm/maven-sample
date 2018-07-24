@@ -53,3 +53,22 @@ mvn clean package
 ## commands
 mvn clean install
 ls -la ~/.m2/repository/com/sample/example/1.0/
+
+8. java 1.8 compiler
+
+## pom.xml
+<code>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</code>
