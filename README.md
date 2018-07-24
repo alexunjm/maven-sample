@@ -21,3 +21,13 @@ touch src/main/resources/.gitkeep
 
 touch src/test/java/.gitkeep
 touch src/test/resources/.gitkeep
+
+3. java files and packages
+
+## commands
+cd src/main/java
+mkdir -p com/sample/training
+
+code Application.java
+### root folder
+mvn package
