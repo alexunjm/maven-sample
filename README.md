@@ -37,3 +37,19 @@ mvn package
 ## commands
 cd target
 java -cp example-1.0.jar com.sample.training.Application
+
+5. clean workspace
+
+## commands
+mvn clean
+
+6. clean workspace and generate again target folder with package (multiple goals)
+
+## commands
+mvn clean package
+
+7. install package as caché on ~/.m2
+
+## commands
+mvn clean install
+ls -la ~/.m2/repository/com/sample/example/1.0/
