@@ -31,3 +31,9 @@ mkdir -p com/sample/training
 code Application.java
 ### root folder
 mvn package
+
+4. execute class from package
+
+## commands
+cd target
+java -cp example-1.0.jar com.sample.training.Application
