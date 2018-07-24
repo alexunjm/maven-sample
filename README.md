@@ -72,3 +72,21 @@ ls -la ~/.m2/repository/com/sample/example/1.0/
     </plugins>
   </build>
 </code>
+
+9. adding dependencies
+
+## search maven center
+
+[search.maven.org] (https://search.maven.org/#search%7Cga%7C1%7Ccommons-lang3)
+
+### dependency information
+
+<code>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.7</version>
+    </dependency>
+  </dependencies>
+</code>
